@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: ivory;
+}
+
+header{
+    height: 80vh;
+    background: linear-gradient(rgba(26, 25, 25, 0.8), rgba(26, 25, 25, 0.8)), url("curry_food.jpg") center/120% no-repeat fixed;
+    width: 100vw;
+    border-bottom: 1px solid ivory;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    /* background-image: linear-gradient(to right, crimson, #D2042D, #960018); */
+    color: ivory;
+    padding: 16px 0;
+    border-bottom: 1px solid ivory;
+}
+
+nav ul{
+    display: flex;
+    gap: 2.5vw;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    font-size: 3.5vh;
+    transition: all;
+}
+
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: ivory;
+    transition: all 0.4s ease;
+}
+
+nav ul li a:hover{
+    background-image: linear-gradient(to right, crimson, #D2042D, #960018);
+    padding: 2px 5px;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+.logo-storage{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo{
+    font-size: 4vh;
+    font-weight: bold;
+    font-family: "Story Script", sans-serif;
+    padding: 0 10px;
+    background-image: linear-gradient(to right, crimson, #D2042D, #960018);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggle{
+    display: none;
+}
+
+.logo-img{
+    display: none;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.logo-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+header .head h1{
+    text-align: center;
+    font-size: 10vh;
+    font-family: "Story Script", sans-serif;
+}
+
+.nav-link{
+    background-image: linear-gradient(to right, crimson, #D2042D, #960018);
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+main{
+    background: linear-gradient(to right, #444444, #292929);
+    /* background: linear-gradient(180deg, #2B2B2B, #1A1A1A); */
+}
+
+.title h2{
+    text-align: center;
+    font-size: 6vh;
+    padding: 0px 0px 8px 0px;
+}
+
+.list ul{
+    list-style-type: square;
+    list-style-position: inside;
+    text-align: center;
+    font-size: 3vh;
+    padding: 8px 0;
+}
+
+.list ul li{
+    display: list-item;
+    color: yellow;
+}
+
+#disc p{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.menu{
+    display: flex;
+    margin: 16px 0 0 0;
+    gap: 4vw;
+    justify-content: space-evenly;
+    padding: 0px 0 15px 0;
+    /* border-bottom: 1px solid ivory; */
+}
+
+.menu img{
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.left, .right{
+    padding: 10px;
+    display: flex;
+    background: linear-gradient(180deg, #3C3C3C, #222222);
+    width: 40vw;
+    border: 2px solid black;
+    align-items: center;
+    height: auto;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.left:hover{
+    transform: translateY(-8px) scale(1.1);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.8);
+}
+
+.right:hover{
+    transform: translateY(-8px) scale(1.1);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.8);
+
+}
+
+.menu .text{
+    display: flex;
+    padding-left: 20px;
+    flex-direction: column;
+}
+
+.menu .text .para{
+    padding: 10px 0;
+}
+
+.menu .text .price{
+    display: flex;
+    justify-content: end;
+    top: 100%;
+}
+
+.menu .text .price p{
+    font-size: 3vh;
+    color: yellow;
+}
+
+.review{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    background: linear-gradient(to right, #3C3C3C, #222222);
+    padding: 10vh 5vw;
+    gap: 4vw;
+    color: ivory;
+    border-top: 1px solid ivory;
+}
+
+.review-left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.review-left h2{
+    color: crimson;
+    margin-bottom: 10px;
+    font-size: 5vh;
+}
+
+.review-left p{
+    font-size: 3vh;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.review-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.review-card{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, #3C3C3C, #222222);
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: default;
+}
+
+.review-card:hover{
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+    transform: translateY(-5px);
+}
+
+.review-card img{
+    width: 6.5vw;
+    border-radius: 50%;
+    border: 2px solid crimson;
+    object-fit: cover;
+    margin-right: 2vw;
+}
+
+.review-text h4{
+    color: yellow;
+    font-size: 3vh;
+    margin-bottom: 6px;
+}
+
+.review-text p{
+    font-size: 2.8vh;
+    color: ivory;
+    line-height: 1.4;
+}
+
+.review-right{
+    width: 40%;
+    background: linear-gradient(rgba(26, 25, 25, 0.8), rgba(26, 25, 25, 0.8)), url("chef.jpg") center/cover no-repeat;
+    border-radius: 2px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    min-height: 650px;
+}
+
+footer{
+    border-top: 1px solid ivory;
+    /* background-image: linear-gradient(to right, crimson, #D2042D, #960018); */
+    background: linear-gradient(rgba(26, 25, 25, 0.9), rgba(26, 25, 25, 0.9)), url("cafe.jpg") center/120% no-repeat fixed;
+    padding: 60px 20px;
+    font-size: 3vh;
+    text-align: left;
+    color: ivory;
+    min-height: auto;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    gap: 4vw;
+}
+
+.footleft, .footmid, .footright{
+    width: 30%;
+}
+
+.foothead h3{
+    margin-bottom: 15px;
+    font-size: 4vh;
+    font-weight: bolder;
+    color: crimson;
+}
+
+.footpara{
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 3vh;
+}
+
+.footlogo p{
+    font-family: "Story Script", sans-serif;
+    font-size: 4vh;
+}
+
+.foothours ul{
+    list-style: none;
+}
+
+.footcon address .footadd{
+    padding: 10px 0;
+}
+
+.footsocials{
+    display: flex;
+    margin: 20px;
+    gap: 1vw;
+}
+
+.footsocials .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid crimson;
+    border-radius: 50%;
+    text-decoration: none;
+    color: ivory;
+    font-size: 4vh;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(220, 20, 60, 0.3);
+}
+
+.footsocials .icon:hover{
+    background: linear-gradient(to right, crimson, #D2042D, #960018);
+    color: white;
+    box-shadow: 0 0 20px crimson, 0 0 40px crimson;
+    transform: translateY(-5px);
+}
+
+.footsocials .icon:hover:nth-child(1) { background: #1877F2; } 
+.footsocials .icon:hover:nth-child(2) { background: #E4405F; }
+.footsocials .icon:hover:nth-child(3) { background: #FF0000; } 
+.footsocials .icon:hover:nth-child(4) { background: #1DA1F2; } 
+
+@media (max-width: 768px)
+{
+    nav{
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .logo{
+        display: block;
+    }
+
+    .link{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(to right, #3C3C3C, #222222);
+        border-top: 1px solid ivory;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .toggle:checked + .logo-img + .link{
+        display: flex;
+    }
+
+    .link li{
+        padding: 10px 0;
+    }
+
+    .link a{
+        font-size: 2.5vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
