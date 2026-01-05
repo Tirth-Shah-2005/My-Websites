@@ -3,12 +3,13 @@
     padding: 0;
     font-family: sans-serif;
     color: ivory;
+    box-sizing: border-box;
 }
 
 header{
     height: 80vh;
     background: linear-gradient(rgba(26, 25, 25, 0.8), rgba(26, 25, 25, 0.8)), url("curry_food.jpg") center/120% no-repeat fixed;
-    width: 100vw;
+    width: 100%;
     border-bottom: 1px solid ivory;
 }
 
@@ -200,6 +201,7 @@ main{
     gap: 4vw;
     color: ivory;
     border-top: 1px solid ivory;
+    /* outline: 3px solid crimson; */
 }
 
 .review-left{
@@ -245,7 +247,7 @@ main{
 }
 
 .review-card img{
-    width: 6.5vw;
+    width: clamp(48px, 6vw, 80px);
     border-radius: 50%;
     border: 2px solid crimson;
     object-fit: cover;
